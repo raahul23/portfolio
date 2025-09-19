@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Raahul U | UI/UX Designer</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">Raahul<span> Umayarajan</span></div>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#uiux">UI Projects</a></li>
+        <li><a href="#about">About</a></li>
+      </ul>
+      <div class="hamburger">&#9776;</div>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="hero-content" data-aos="fade-up">
+      <h1>Hello, I’m <span>Raahul</span></h1>
+      <h2 class="typing">UI/UX Designer | Frontend Developer | AI Enthusiast</h2>
+      <p>I design & build intuitive digital experiences blending creativity with technology.</p>
+      <a href="#projects" class="btn">View My Work</a>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="section">
+    <h2 data-aos="fade-up">Projects</h2>
+    <div class="project-grid">
+
+      <!-- Project 1 -->
+      <div class="project-card" data-aos="zoom-in">
+        <img src="gesto_tune.jpg" alt="Reinforcement Learning Project">
+        <h3>GESTO TUNE</h3>
+        <p>Developed a real-time computer volume control system using hand gestures captured via webcam. Utilized
+        MediaPipe to detect thumb and index finger positions and mapped their distance to system audio levels using
+        Pycaw. Displayed volume bar overlay using OpenCV for visual feedback.</p>
+        <p><b>Tech Stack:</b> Python, OpenCV, MediaPipe, NumPy, Pycaw</p>
+      </div>
+
+      <!-- Project 2 -->
+      <div class="project-card" data-aos="zoom-in">
+        <img src="beauty_saloon.jpg" alt="PDF Analyzer Project">
+        <h3>Beauty Salon Booking App</h3>
+        <p>Designed and developed a full-stack beauty salon booking application using React for the frontend and
+        Flask for the backend. Implemented user authentication, appointment scheduling, and an admin dashboard for
+        managing bookings and services.</p>
+        <p><b>Tech Stack:</b> React, Flask, SQLAlchemy, JWT, Bootstrap</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- UI/UX Projects Section -->
+  <section id="uiux" class="section">
+    <h2 data-aos="fade-up">UI Case Studies</h2>
+    <div class="project-grid">
+
+      <div class="project-card" data-aos="fade-right" onclick="openCaseStudy('case1')">
+        <img src="fruit.png" alt="Fruity – Juice Brand Design">
+        <h3>Fruity – Juice Brand Design</h3>
+      </div>
+
+      <div class="project-card" data-aos="fade-left" onclick="openCaseStudy('case2')">
+        <img src="ecobadge.png" alt="ECOBADGE – Plastic Footprint Game UI">
+        <h3>ECOBADGE – Plastic Footprint Game UI</h3>
+      </div>
+
+      <div class="project-card" data-aos="fade-up" onclick="openCaseStudy('case3')">
+        <img src="portfolio.png" alt="Portfolio Website – Raahul U">
+        <h3>Portfolio Website – Raahul U</h3>
+      </div>
+
+      <div class="project-card" data-aos="fade-up" onclick="openCaseStudy('case4')">
+        <img src="classgrid.png" alt="ClassGrid">
+        <h3>ClassGrid – Classroom Allocation App (In Progress)</h3>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Case Study Modals -->
+  <div id="case1" class="case-study-modal">
+    <div class="case-study-content">
+      <span class="close" onclick="closeCaseStudy('case1')">&times;</span>
+      <h3>Fruity – Juice Brand Design</h3>
+      <p>Overview -- Fruity is a conceptual juice brand designed to be fresh, bold, and playful. The goal was to create packaging and digital visuals that stand out in a competitive market while keeping a consistent brand identity.</p>
+
+      </p>Process</p>
+      <p>Research: Analyzed competitors, market trends, and target demographics to identify opportunities for differentiation.
+      <p>Wireframing: Focused on simple layouts with the can at the center, bold typography, and minimal navigation.</p>
+
+      <p>Design: Used vibrant color palettes (red, green, yellow) to differentiate flavors, playful organic typography for impact, and clean labels for clarity.</p></p>
+
+      <p>Variants: Created three distinct flavor variants (Strawberry, Kiwi, Mango), each with unique color schemes and fruit illustrations to convey freshness and appeal.
+      <p>
+      Outcome ---
+      A cohesive design system with eye-catching mockups, consistent labels, and a modern brand identity that feels youthful, refreshing, and memorable.</p>
+    </div>
+  </div>
+
+  <div id="case2" class="case-study-modal">
+    <div class="case-study-content">
+      <span class="close" onclick="closeCaseStudy('case2')">&times;</span>
+      <h3>ECOBADGE – Plastic Footprint Game UI</h3>
+
+      <p><strong>Overview:</strong> ECOBADGE is a gamified app that tracks and reduces plastic use by turning eco-actions into fun, rewardable challenges. The UI blends sustainability with gaming mechanics to motivate consistent behavior change.</p>
+
+      <p><strong>Process:</strong> Simple onboarding and auth flows personalize the experience; a dashboard shows weekly checklists and progress charts; gamification awards coins for completed tasks; a Forest Inventory visualizes saved plastic as growing trees; leaderboards foster friendly competition.</p>
+
+      <p><strong>Outcome:</strong> A dark-themed, engaging interface with bright accents that makes sustainability feel social, playful, and rewarding—encouraging users to reduce plastic waste through game-like incentives.</p>
+    </div>
+  </div>
+
+  <div id="case3" class="case-study-modal">
+    <div class="case-study-content">
+      <span class="close" onclick="closeCaseStudy('case3')">&times;</span>
+      <p><strong>Overview:</strong> A clean and modern portfolio website showcasing my journey as a <em>Frontend Developer & UI/UX Designer</em>. The design focuses on clarity, minimalism, and easy navigation to highlight skills, projects, and contact details.</p>
+
+  <p><strong>Process:</strong> 
+    - <em>Home Page:</em> Simple intro with personal branding and quick links. <br>
+    - <em>About Me:</em> A detailed section about my background, skills, and approach. <br>
+    - <em>Skills:</em> Visual grid layout with icons for technologies and tools. <br>
+    - <em>Contact:</em> Minimal form with clear input fields and CTA button for quick communication.
+  </p>
+
+  <p><strong>Outcome:</strong> A responsive, user-friendly portfolio with a professional look that communicates both <em>technical expertise</em> and <em>design creativity</em>. It’s structured for recruiters, clients, and collaborators to easily explore my profile.</p>
+    </div>
+  </div>
+    <div id="case4" class="case-study-modal">
+    <div class="case-study-content">
+      <p><strong>🏫 ClassGrid – Classroom Allocation App (In Progress)</strong></p>
+
+  <p><strong>Overview:</strong> ClassGrid is a mobile app designed to simplify classroom management by allowing <em>students, teachers, and admins</em> to access and allocate rooms with ease.</p>
+
+  <p><strong>Process:</strong> 
+    - <em>Home & Options:</em> Simple splash and role-based selection (Student, Teacher, Admin). <br>
+    - <em>Login Flows:</em> Separate login for each role with ID & password inputs. <br>
+    - <em>Admin Tools:</em> Ability to add floors and assign room numbers dynamically. 
+  </p>
+
+  <p><strong>Outcome:</strong> A straightforward, functional interface with clear navigation. ClassGrid is still in progress, but aims to deliver an <em>efficient digital system</em> for managing classrooms and reducing manual scheduling work.</p>
+    </div>
+  </div>
+
+  <!-- About Section -->
+  <section id="about" class="section about">
+    <h2 data-aos="fade-up">About Me</h2>
+    <div class="about-grid">
+
+      <div class="about-card" data-aos="fade-right">
+        <img src="photo.png" alt="Raahul U" class="about-profile">
+        <h3>Hi, I'm Raahul U</h3>
+        <p>I’m a passionate UI/UX Designer and Frontend Developer. I create intuitive and visually appealing digital experiences by combining design principles with modern web technologies. My goal is to solve user problems while delivering innovative solutions.</p>
+      </div>
+
+      <div class="about-card" data-aos="fade-left">
+        <h3>Education</h3>
+        <ul>
+          <li><strong>B.Tech CSE (AIML)</strong> - SRM Institute of Science & Technology (8.27 CGPA)</li>
+          <li><strong>Senior Secondary</strong> - Kendriya Vidyalaya, CMFRI, Mandapam (74.4%)</li>
+          <li><strong>Secondary</strong> - Kendriya Vidyalaya, Rameshwaram (70%)</li>
+        </ul>
+      </div>
+
+      <div class="about-card" data-aos="fade-right">
+        <h3>Skills</h3>
+        <ul class="skills-list">
+          <li>Python | C | HTML | CSS | JavaScript</li>
+          <li>React.js | Flask | Node.js | Django</li>
+          <li>Figma | Photoshop | Illustrator | Blender</li>
+          <li>MySQL | MongoDB | Git | GitHub</li>
+        </ul>
+      </div>
+
+      <div class="about-card" data-aos="fade-left">
+        <h3>Awards & Contact</h3>
+        <ul>
+          <li>Paper Presentation @ PSG College of Technology, Coimbatore</li>
+          <li>Filed Patent – UAV-Based Real-Time Land Mapping</li>
+          <li>📞 +91 8300218662</li>
+          <li>✉️ raahul@example.com</li>
+          <li>🔗 <a href="https://www.linkedin.com/in/raahul1423/" target="_blank">LinkedIn</a> | <a href="https://github.com/raahul23" target="_blank">GitHub</a></li>
+        </ul>
+        <a href="https://drive.google.com/file/d/1QyrpaC25QypEaFyl9yroA2e5qiY-rwW3/view?usp=sharing"  target="_blank" class="btn">View Resume</a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Raahul U | Designed with ❤️</p>
+  </footer>
+
+  <script src="script.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({ duration: 1000, once: false });
+  </script>
+
+</body>
+</html>
