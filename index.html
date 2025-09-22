@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Raahul U | UI/UX Designer</title>
+  
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="spotlight"></div>
+
+  <header>
+    <nav class="navbar">
+      <div class="logo">Raahul<span> Umayarajan</span></div>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#uiux">UI Projects</a></li>
+        <li><a href="#about">About</a></li>
+      </ul>
+      <div class="theme-switch-wrapper">
+        <label class="theme-switch" for="checkbox">
+          <input type="checkbox" id="checkbox" />
+          <div class="slider round"></div>
+        </label>
+      </div>
+      <div class="hamburger">&#9776;</div>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+        <div class="hero-content" data-aos="fade-up">
+            <h1>Hello, I’m <span>Raahul</span></h1>
+            <h2 class="typing"></h2>
+            <p>I design & build intuitive digital experiences blending creativity with technology.</p>
+            <a href="#projects" class="btn">View My Work</a>
+        </div>
+    </section>
+
+    <section id="projects" class="section">
+        <h2 data-aos="fade-up">Projects</h2>
+        <div class="project-grid">
+            <div class="project-card" data-aos="zoom-in">
+                <img src="gesto_tune.jpg" alt="Gesto Tune Project">
+                <h3>GESTO TUNE</h3>
+                <p>Developed a real-time computer volume control system using hand gestures captured via webcam.</p>
+                <p><b>Tech Stack:</b> Python, OpenCV, MediaPipe, NumPy, Pycaw</p>
+            </div>
+            <div class="project-card" data-aos="zoom-in">
+                <img src="beauty_saloon.jpg" alt="Beauty Salon App">
+                <h3>Beauty Salon Booking App</h3>
+                <p>Designed and developed a full-stack beauty salon booking application using React and Flask.</p>
+                <p><b>Tech Stack:</b> React, Flask, SQLAlchemy, JWT, Bootstrap</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="uiux" class="section">
+        <h2 data-aos="fade-up">UI Case Studies</h2>
+        <div class="project-grid">
+            <div class="project-card" data-aos="fade-right" onclick="openCaseStudy('case1')">
+                <img src="fruit.png" alt="Fruity – Juice Brand Design">
+                <h3>Fruity – Juice Brand Design</h3>
+                <div class="view-button">Tap to View</div>
+            </div>
+            <div class="project-card" data-aos="fade-left" onclick="openCaseStudy('case2')">
+                <img src="ecobadge.png" alt="ECOBADGE – Plastic Footprint Game UI">
+                <h3>ECOBADGE – Plastic Footprint Game UI</h3>
+                <div class="view-button">Tap to View</div>
+            </div>
+            <div class="project-card" data-aos="fade-up" onclick="openCaseStudy('case3')">
+                <img src="portfolio.png" alt="Portfolio Website – Raahul U">
+                <h3>Portfolio Website – Raahul U</h3>
+                <div class="view-button">Tap to View</div>
+            </div>
+            <div class="project-card" data-aos="fade-up" onclick="openCaseStudy('case4')">
+                <img src="classgrid.png" alt="ClassGrid">
+                <h3>ClassGrid – Classroom Allocation App</h3>
+                <div class="view-button">Tap to View</div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="section about">
+        <h2 data-aos="fade-up">About Me</h2>
+        <div class="about-grid">
+            <div class="about-card" data-aos="fade-right"><img src="photo.png" alt="Raahul U" class="about-profile"><h3>Hi, I'm Raahul U</h3><p>I’m a passionate UI/UX Designer and Frontend Developer, creating intuitive digital experiences by combining design with modern web technologies.</p></div>
+            <div class="about-card" data-aos="fade-left"><h3>Education</h3><ul><li><strong>B.Tech CSE (AIML)</strong> - SRM Institute of Science & Technology</li><li><strong>Senior Secondary</strong> - Kendriya Vidyalaya, CMFRI</li><li><strong>Secondary</strong> - Kendriya Vidyalaya, Rameshwaram</li></ul></div>
+            <div class="about-card" data-aos="fade-right"><h3>Skills</h3><ul class="skills-list"><li>Python | C | HTML | CSS | JavaScript</li><li>React.js | Flask | Node.js | Django</li><li>Figma | Photoshop | Illustrator | Blender</li><li>MySQL | MongoDB | Git | GitHub</li></ul></div>
+            <div class="about-card" data-aos="fade-left"><h3>Awards & Contact</h3><ul><li>Paper Presentation @ PSG College</li><li>Filed Patent – UAV-Based Land Mapping</li><li>📞 +91 8300218662</li><li>✉️ raahul@example.com</li><li>🔗 <a href="https://www.linkedin.com/in/raahul1423/" target="_blank">LinkedIn</a> | <a href="https://github.com/raahul23" target="_blank">GitHub</a></li></ul><a href="https://drive.google.com/file/d/1dqpMZ2eSZVr8-aRAecKgqzQOUBgR0tPi/view?usp=sharing" target="_blank" class="btn">View Resume</a></div>
+        </div>
+    </section>
+  </main>
+
+  <div id="case1" class="case-study-modal"><div class="case-study-content"><span class="close" onclick="closeCaseStudy('case1')">&times;</span><h3>Fruity – Juice Brand Design</h3><p><b>Overview:</b> A conceptual juice brand designed to be fresh, bold, and playful, with packaging and visuals that stand out in a competitive market.</p></div></div>
+  <div id="case2" class="case-study-modal"><div class="case-study-content"><span class="close" onclick="closeCaseStudy('case2')">&times;</span><h3>ECOBADGE – Plastic Footprint Game UI</h3><p><b>Overview:</b> A gamified app that tracks and reduces plastic use by turning eco-actions into fun, rewardable challenges.</p></div></div>
+  <div id="case3" class="case-study-modal"><div class="case-study-content"><span class="close" onclick="closeCaseStudy('case3')">&times;</span><h3>Portfolio Website – Raahul U</h3><p><b>Overview:</b> A clean and modern portfolio website showcasing my journey as a Frontend Developer & UI/UX Designer.</p></div></div>
+  <div id="case4" class="case-study-modal"><div class="case-study-content"><span class="close" onclick="closeCaseStudy('case4')">&times;</span><h3>ClassGrid – Classroom Allocation App</h3><p><b>Overview:</b> A mobile app designed to simplify classroom management for students, teachers, and admins.</p></div></div>
+
+  <footer><p>© 2025 Raahul U | Designed with ❤️</p></footer>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
