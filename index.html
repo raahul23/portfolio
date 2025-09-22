@@ -24,7 +24,10 @@
       <div class="theme-switch-wrapper">
         <label class="theme-switch" for="checkbox">
           <input type="checkbox" id="checkbox" />
-          <div class="slider round"></div>
+          <div class="icon-container">
+            <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.25a.75.75 0 01.75.75v2.25a.75.75 0 01-1.5 0V3a.75.75 0 01.75-.75zM7.5 12a4.5 4.5 0 119 0 4.5 4.5 0 01-9 0zM18.894 6.106a.75.75 0 010 1.06l-1.591 1.59a.75.75 0 11-1.06-1.06l1.59-1.591a.75.75 0 011.06 0zM21.75 12a.75.75 0 01-.75.75h-2.25a.75.75 0 010-1.5h2.25a.75.75 0 01.75.75zM17.803 16.204a.75.75 0 011.06 0l1.591 1.591a.75.75 0 11-1.06 1.06l-1.591-1.59a.75.75 0 010-1.06zM12 21.75a.75.75 0 01-.75-.75v-2.25a.75.75 0 011.5 0v2.25a.75.75 0 01-.75.75zM5.106 17.803a.75.75 0 010-1.06l1.591-1.591a.75.75 0 111.06 1.06l-1.59 1.59a.75.75 0 01-1.06 0zM2.25 12a.75.75 0 01.75-.75h2.25a.75.75 0 010 1.5H3a.75.75 0 01-.75-.75zM6.106 5.106a.75.75 0 011.06 0l1.591 1.591a.75.75 0 01-1.06 1.06l-1.591-1.59a.75.75 0 010-1.06z"></path></svg>
+            <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path fill-rule="evenodd" d="M9.528 1.718a.75.75 0 01.162.819A8.97 8.97 0 009 6a9 9 0 009 9 8.97 8.97 0 003.463-.69.75.75 0 01.981.981A10.503 10.503 0 0118 18a10.5 10.5 0 01-10.5-10.5c0-1.25.21-2.447.6-3.562a.75.75 0 01.819-.162z" clip-rule="evenodd"></path></svg>
+          </div>
         </label>
       </div>
       <div class="hamburger">&#9776;</div>
@@ -88,23 +91,103 @@
     <section id="about" class="section about">
         <h2 data-aos="fade-up">About Me</h2>
         <div class="about-grid">
-            <div class="about-card" data-aos="fade-right"><img src="photo.png" alt="Raahul U" class="about-profile"><h3>Hi, I'm Raahul U</h3><p>I’m a passionate UI/UX Designer and Frontend Developer, creating intuitive digital experiences by combining design with modern web technologies.</p></div>
-            <div class="about-card" data-aos="fade-left"><h3>Education</h3><ul><li><strong>B.Tech CSE (AIML)</strong> - SRM Institute of Science & Technology</li><li><strong>Senior Secondary</strong> - Kendriya Vidyalaya, CMFRI</li><li><strong>Secondary</strong> - Kendriya Vidyalaya, Rameshwaram</li></ul></div>
-            <div class="about-card" data-aos="fade-right"><h3>Skills</h3><ul class="skills-list"><li>Python | C | HTML | CSS | JavaScript</li><li>React.js | Flask | Node.js | Django</li><li>Figma | Photoshop | Illustrator | Blender</li><li>MySQL | MongoDB | Git | GitHub</li></ul></div>
-            <div class="about-card" data-aos="fade-left"><h3>Awards & Contact</h3><ul><li>Paper Presentation @ PSG College</li><li>Filed Patent – UAV-Based Land Mapping</li><li>📞 +91 8300218662</li><li>✉️ 14raahul@gmail.com</li><li>🔗 <a href="https://www.linkedin.com/in/raahul1423/" target="_blank">LinkedIn</a> | <a href="https://github.com/raahul23" target="_blank">GitHub</a></li></ul><a href="https://drive.google.com/file/d/1dqpMZ2eSZVr8-aRAecKgqzQOUBgR0tPi/view?usp=sharing" target="_blank" class="btn">View Resume</a></div>
+            <div class="about-card" data-aos="fade-right">
+                <img src="photo.png" alt="Raahul U" class="about-profile">
+                <h3>Hi, I'm Raahul U</h3>
+                <p>I’m a passionate UI/UX Designer and Frontend Developer, creating intuitive digital experiences by combining design with modern web technologies.</p>
+            </div>
+            <div class="about-card" data-aos="fade-left">
+                <h3>Education</h3>
+                <ul>
+                    <li><strong>B.Tech CSE (AIML)</strong> - SRM Institute of Science & Technology</li>
+                    <li><strong>Senior Secondary</strong> - Kendriya Vidyalaya, CMFRI</li>
+                </ul>
+            </div>
+            <div class="about-card" data-aos="fade-right">
+                <h3>Skills</h3>
+                <ul class="skills-list">
+                    <li>Python | C | HTML | CSS | JavaScript</li>
+                    <li>React.js | Flask | Node.js | Django</li>
+                    <li>Figma | Photoshop | Illustrator | Blender</li>
+                    <li>MySQL | MongoDB | Git | GitHub</li>
+                </ul>
+            </div>
+            <div class="about-card" data-aos="fade-left">
+                <h3>Awards & Contact</h3>
+                <ul>
+                    <li>Paper Presentation @ PSG College</li>
+                    <li>Filed Patent – UAV-Based Land Mapping</li>
+                    <li>📞 +91 8300218662</li>
+                    <li>✉️ raahul@example.com</li>
+                    <li>🔗 <a href="https://www.linkedin.com/in/raahul1423/" target="_blank">LinkedIn</a> | <a href="https://github.com/raahul23" target="_blank">GitHub</a></li>
+                </ul>
+                <a href="https://drive.google.com/file/d/1dqpMZ2eSZVr8-aRAecKgqzQOUBgR0tPi/view?usp=sharing" target="_blank" class="btn">View Resume</a>
+            </div>
         </div>
     </section>
   </main>
 
-  <div id="case1" class="case-study-modal"><div class="case-study-content"><span class="close" onclick="closeCaseStudy('case1')">&times;</span><h3>Fruity – Juice Brand Design</h3><p><b>Overview:</b> A conceptual juice brand designed to be fresh, bold, and playful, with packaging and visuals that stand out in a competitive market.</p></div></div>
-  <div id="case2" class="case-study-modal"><div class="case-study-content"><span class="close" onclick="closeCaseStudy('case2')">&times;</span><h3>ECOBADGE – Plastic Footprint Game UI</h3><p><b>Overview:</b> A gamified app that tracks and reduces plastic use by turning eco-actions into fun, rewardable challenges.</p></div></div>
-  <div id="case3" class="case-study-modal"><div class="case-study-content"><span class="close" onclick="closeCaseStudy('case3')">&times;</span><h3>Portfolio Website – Raahul U</h3><p><b>Overview:</b> A clean and modern portfolio website showcasing my journey as a Frontend Developer & UI/UX Designer.</p></div></div>
-  <div id="case4" class="case-study-modal"><div class="case-study-content"><span class="close" onclick="closeCaseStudy('case4')">&times;</span><h3>ClassGrid – Classroom Allocation App</h3><p><b>Overview:</b> A mobile app designed to simplify classroom management for students, teachers, and admins.</p></div></div>
+  <div id="case1" class="case-study-modal">
+    <div class="case-study-content">
+      <span class="close" onclick="closeCaseStudy('case1')">&times;</span>
+      <img src="fruit.png" alt="Fruity – Juice Brand Design"><hr>
+      <h3>Fruity – Juice Brand Design</h3>
+      <h4>1. Project Overview</h4>
+      <p>Fruity is a conceptual juice brand focused on delivering fresh, playful, and vibrant energy through its packaging and branding. The aim was to design a modern, eye-catching identity that communicates natural flavors and stands out in both digital and physical spaces.</p>
+      <h4>2. Problem Statement</h4>
+      <p>The beverage market is highly competitive. Our challenge was to create distinctive packaging for different flavors while maintaining brand consistency and developing a design system that feels youthful, natural, and memorable.</p>
+      <h4>3. Design Execution</h4>
+      <p>Each flavor variant was given a distinctive personality through color, typography, and imagery. Large, organic, playful fonts overlap the cans to add boldness, while minimalistic labels with fruit illustrations ensure clarity and brand consistency.</p>
+      <h4>4. Final Outcome</h4>
+      <p>A cohesive design system that blends playful energy with product clarity, resulting in a modern, shelf-ready identity that’s instantly recognizable and connects with young audiences.</p>
+    </div>
+  </div>
+
+  <div id="case2" class="case-study-modal">
+    <div class="case-study-content">
+      <span class="close" onclick="closeCaseStudy('case2')">&times;</span>
+      <img src="ecobadge.png" alt="ECOBADGE – Plastic Footprint Game UI"><hr>
+      <h3>ECOBADGE – Plastic Footprint Game UI</h3>
+      <p><strong>Overview:</strong> ECOBADGE is a gamified app that tracks and reduces plastic use by turning eco-actions into fun, rewardable challenges. The UI blends sustainability with gaming mechanics to motivate consistent behavior change.</p>
+      <p><strong>Process:</strong> Simple onboarding and auth flows personalize the experience; a dashboard shows weekly checklists and progress charts; gamification awards coins for completed tasks; a Forest Inventory visualizes saved plastic as growing trees; leaderboards foster friendly competition.</p>
+      <p><strong>Outcome:</strong> A dark-themed, engaging interface with bright accents that makes sustainability feel social, playful, and rewarding—encouraging users to reduce plastic waste through game-like incentives.</p>
+    </div>
+  </div>
+
+  <div id="case3" class="case-study-modal">
+    <div class="case-study-content">
+      <span class="close" onclick="closeCaseStudy('case3')">&times;</span>
+      <img src="portfolio.png" alt="Portfolio Website – Raahul U"><hr>
+      <h3>Portfolio Website – Raahul U</h3>
+      <p><strong>Overview:</strong> A clean and modern portfolio website showcasing my journey as a <em>Frontend Developer & UI/UX Designer</em>. The design focuses on clarity, minimalism, and easy navigation to highlight skills, projects, and contact details.</p>
+      <p><strong>Process:</strong> 
+        - <em>Home Page:</em> Simple intro with personal branding and quick links. <br>
+        - <em>About Me:</em> A detailed section about my background, skills, and approach. <br>
+        - <em>Skills:</em> Visual grid layout with icons for technologies and tools. <br>
+        - <em>Contact:</em> Minimal form with clear input fields and CTA button for quick communication.
+      </p>
+      <p><strong>Outcome:</strong> A responsive, user-friendly portfolio with a professional look that communicates both <em>technical expertise</em> and <em>design creativity</em>. It’s structured for recruiters, clients, and collaborators to easily explore my profile.</p>
+    </div>
+  </div>
+
+  <div id="case4" class="case-study-modal">
+    <div class="case-study-content">
+      <span class="close" onclick="closeCaseStudy('case4')">&times;</span>
+      <img src="classgrid.png" alt="ClassGrid"><hr>
+      <h3>ClassGrid – Classroom Allocation App</h3>
+      <p><strong>Overview:</strong> ClassGrid is a mobile app designed to simplify classroom management by allowing <em>students, teachers, and admins</em> to access and allocate rooms with ease.</p>
+      <p><strong>Process:</strong> 
+        - <em>Home & Options:</em> Simple splash and role-based selection (Student, Teacher, Admin). <br>
+        - <em>Login Flows:</em> Separate login for each role with ID & password inputs. <br>
+        - <em>Admin Tools:</em> Ability to add floors and assign room numbers dynamically. 
+      </p>
+      <p><strong>Outcome:</strong> A straightforward, functional interface with clear navigation. ClassGrid is still in progress, but aims to deliver an <em>efficient digital system</em> for managing classrooms and reducing manual scheduling work.</p>
+    </div>
+  </div>
 
   <footer><p>© 2025 Raahul U | Designed with ❤️</p></footer>
 
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script src="script.js"></script>
 </body>
-
 </html>
